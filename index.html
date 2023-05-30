@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <title>My Portfolio|HTML CSS Javascript</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- Move to up button -->
+
     <div class="scroll-button">
       <a href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
-    <!-- navgaition menu -->
+
     <nav>
       <div class="navbar">
-        <div class="logo"><a href="#">Portfolio.</a></div>
+        <div class="logo"><a href="#">My Portfolio.</a></div>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -78,7 +76,6 @@
     </section>
 
     <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
     <section class="skills" id="skills">
       <div class="content">
         <div class="title"><span>My Skills</span></div>
@@ -169,19 +166,32 @@
 
     <!-- Contact Me section Start -->
     <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic">Have Any Project?</div>
-          <p>Ready to Bring Your Project to Life? Let's Collaborate!
-
-            Are you looking for a dedicated and skilled professional to bring your project to fruition? Look no further! I am passionate about taking on new challenges and collaborating on exciting ventures.</p>
-          <div class="button">
-            <button>Chat Me</button>
+        <div class="content">
+          <div class="title"><span>Contact Me</span></div>
+          <div class="text">
+            <div class="topic">Have Any Project?</div>
+            <p>Ready to Bring Your Project to Life? Let's Collaborate!</p>
+            <p>Are you looking for a dedicated and skilled professional to bring your project to fruition? Look no further! I am passionate about taking on new challenges and collaborating on exciting ventures.</p>
+            <form id="contact-form" method="POST" action="#">
+              <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Footer Section Start -->
     <footer>
